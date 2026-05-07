@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bodegon-crema: #f5f0e6;
+  --color-bodegon-rojo: #7f1d1d;
+  --color-primary: #1c1917;
+  --color-accent: #b45309;
+}
+
+/* Esto es lo que hace la magia del scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Opcional: Ajuste para que el Navbar no tape el inicio de las secciones */
+section {
+  scroll-margin-top: 80px;
+}
+
+@layer utilities {
+  .bg-gradient-to-crema {
+    background: linear-gradient(to bottom, #ffffff, var(--color-bodegon-crema));
+  }
+  .bg-gradient-to-dark {
+    background: linear-gradient(to bottom, var(--color-bodegon-crema), var(--color-primary));
+  }
+}
