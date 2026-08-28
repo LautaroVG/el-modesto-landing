@@ -7,12 +7,12 @@
   --color-accent: #b45309;
 }
 
-/* Esto es lo que hace la magia del scroll suave */
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Opcional: Ajuste para que el Navbar no tape el inicio de las secciones */
+
 section {
   scroll-margin-top: 80px;
 }
