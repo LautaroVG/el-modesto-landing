@@ -2,7 +2,7 @@ import React from 'react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
-// Función para combinar clases de Tailwind sin conflictos
+
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
